@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  color: var(--text-color);
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title h1, .main-title code {
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.main-title code {
+  color: #000;
+  -webkit-text-stroke-color: #8257e7;
+  -webkit-text-stroke-width: 2px;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+
+
+@media (max-width: 700px) {
+
+  .main-title {
+    margin-top: 3rem;
+  }
+
+  .main-title h1, .main-title code {
+    font-size: 3rem;
+  }
+
+  .main-image {
+    position: fixed;
+    bottom: -10px;
+  }
+}

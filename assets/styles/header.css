@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1.25rem;
+  z-index: 999;
+  position: relative;
+  z-index: 999;
+}
+
+.header .logo img {
+  width: 3rem;
+}
+
+.header .nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.header .nav ul li a {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.header .btn a {
+  padding: 0.75rem 2.5rem;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid var(--button);
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  font-size: 0.75rem;
+  transition: background-color 0.2s;
+}
+
+.header .btn a:hover {
+  background-color: var(--button);
+}
+
+
+
+
+.header .nav-mobile,
+.header .logo-mobile,
+.header .btn-mobile-open,
+.header .btn-mobile-close {
+  display: none;
+}
+
+.header .nav-mobile {
+  background-color: var(--background);
+  position: absolute;
+  bottom: calc(-100vh - 1px);
+  height: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.header .nav-mobile ul li {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  border-left: 5px solid transparent;
+}
+
+.header .nav-mobile ul li.active {
+  border-left: 5px solid var(--button);
+}
+
+.header .nav-mobile ul li a {
+  color: var(--border-menu-mobile);
+  display: block;
+}
+
+.header .btn-mobile-open,
+.header .btn-mobile-close {
+  cursor: pointer;
+}
+
+.header .nav-mobile.open {
+  display: block;
+  animation: openMenu 0.5s forwards;
+}
+
+.header .btn-mobile-open.show {
+  display: block;
+}
+
+.header .btn-mobile-open.hidden {
+  display: none;
+}
+
+.header .btn-mobile-close.hidden {
+  display: none;
+}
+
+.header .btn-mobile-close.show {
+  display: block;
+}
+
+
+
+@media (max-width: 700px) {
+  .header {
+    border-bottom: 1px solid var(--border);
+    background-color: var(--background);
+  }
+
+  .header .logo,
+  .header .btn,
+  .header .nav {
+    display: none;
+  }
+
+  .header .logo-mobile,
+  .header .btn-mobile-open {
+    display: block;
+  }
+
+}
+
+
+
+@keyframes openMenu {
+  from {
+    height: 0;
+  } to {
+    height: 100vh;
+  }
+}
