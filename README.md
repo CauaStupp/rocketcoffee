@@ -1,8 +1,8 @@
 <h1 align="center">RocketCoffee</h1>
 
-<h2>Descrição</h2>
+<h2> :scroll: Descrição</h2>
 <p>
-
+  Nesse site eu tentei fazer com o básico, sem nenhum framework. Tive alguns problemas pra fazer o efeito de borda no texto e acabou ficando meio bugado, mas optei por  não usar imagens
 </p>
 
 <h2> :computer: Build</h2>
