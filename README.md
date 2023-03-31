@@ -2,12 +2,15 @@
 
 <h2> :scroll: Descrição</h2>
 <p>
-  Nesse site eu tentei fazer com o básico, sem nenhum framework. Tive alguns problemas pra fazer o efeito de borda no texto e acabou ficando meio bugado, mas optei por  não usar imagens
+  Nesse desafio eu tinha que tentar reproduzir uma lading page que fosse responsiva e tivesse um bootão de abrir um menu hamburguer, desafio foi bem legal pra treinar e nele eu evitei usar algum framework mais complexo, tipo o react, mas usei o vite com js vanilla pra reconstruir esse layout.
 </p>
 
 <h2> :computer: Build</h2>
 <p>
-  Fiz ele com o Vite e JS padrão
+  <li>Vite</li>
+  <li>JS</li>
+  <li>HTML</li>
+  <li>CSS</li>
 </p>
 
 <h2> :framed_picture: Thumb</h2>
